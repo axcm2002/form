@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="border container">
+        <div class="border mt-1">
+            <h2 class="ms-4">Payment form example</h2>
+        </div>
+        <div>
+            <div class="alert alert-danger mx-4 mt-4" role="alert">
+                Some fields are missing
+            </div>
+        </div>
+        <div class="d-flex px-4 justify-content-between">
+            <div class="col-4">
+                <label class="fw-bold">Card #</label>
+                <input class="form-control form-control-sm" type="text" placeholder="XXXXXXXXX"
+                    aria-label=".form-control-sm example">
+            </div>
+            <div class="col-2 mx-4">
+                <label class="fw-bold">CVC #</label>
+                <input class="form-control form-control-sm" type="text" placeholder="000"
+                    aria-label=".form-control-sm example">
+            </div>
+            <div class="col-5">
+                <label class="fw-bold">Amount</label>
+                <div class="d-flex">
+                    <b>$</b><input class="form-control form-control-sm" type="text" placeholder="000"
+                        aria-label=".form-control-sm example">
+                </div>
+            </div>
+        </div>
+        <div class="d-flex mt-4 mx-4">
+            <div class="col me-2">
+                <label class="fw-bold">First Name</label>
+                <input class="form-control form-control-sm" type="text" placeholder=""
+                    aria-label=".form-control-sm example">
+            </div>
+            <div class="col">
+                <label class="fw-bold">Last Name</label>
+                <input class="form-control form-control-sm" type="text" placeholder=""
+                    aria-label=".form-control-sm example">
+            </div>
+        </div>
+        <div class="d-flex px-4 mt-4 justify-content-between">
+            <div class="col-4">
+                <label class="fw-bold">City</label>
+                <input class="form-control form-control-sm" type="text" placeholder=""
+                    aria-label=".form-control-sm example">
+            </div>
+            <div class="col-2 mx-4">
+                <label class="fw-bold">State</label>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>Pick a state</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-5">
+                <label class="fw-bold">Postal Code</label>
+                <div class="d-flex">
+                    <input class="form-control form-control-sm" type="text" placeholder=""
+                        aria-label=".form-control-sm example">
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex mt-4 mx-4">
+            <div class="col-6">
+                <label class="fw-bold">We accept:</label>
+                <div class="bg-secondary col-4 d-flex justify-content-between mt-3">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                    checked>
+                    <i class="bi bi-stripe"></i>
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2"
+                    checked>
+                    <i class="bi bi-alipay"></i>
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3"
+                    checked>
+                    <i class="bi bi-wallet-fill"></i>
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4"
+                    checked>
+                    <i class="bi bi-credit-card-2-back-fill"></i>
+                </div>
+            </div>
+            <div class="col-6">
+                <label class="fw-bold">Message</label>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                </div>
+                <p class="text-secondary">add any notes here.</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-secondary me-2">Cancel</button>
+            <button type="button" class="btn btn-primary me-4">Send</button>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
